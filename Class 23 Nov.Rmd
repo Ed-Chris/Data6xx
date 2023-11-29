@@ -1,0 +1,117 @@
+```{r}
+LifetimeData = read.csv("https://raw.githubusercontent.com/DanikaLipman/DATA603/main/lifetime.csv")
+head(LifetimeData,5)
+CRD=aov(hrs~device, data=LifetimeData)
+summary(CRD)
+boxplot(hrs~ device, data=LifetimeData)
+```
+```{r}
+MVPC=read.csv("https://raw.githubusercontent.com/DanikaLipman/DATA603/main/MVPC.csv", header=TRUE)
+head(MVPC,5)
+```
+```{r}
+CRD1=aov(Score~Treatment, data=MVPC) #Perform ANOVA for CRD
+summary(CRD1)
+```
+```{r}
+ybar=mean(MVPC$Score[MVPC$Treatment == "Amesbury"])
+tcrit=qt(0.005,CRD1$df.residual, lower.tail = F) 
+MSE=sum((CRD1$residuals)^2/CRD1$df.residual)  #CRD$df.residual=24-8=16
+r=length(MVPC$Score[MVPC$Treatment == "Amesbury"])
+#construct a 99% CI
+LowerCI=ybar-tcrit*sqrt(MSE/r)
+UpperCI=ybar+tcrit*sqrt(MSE/r)
+CI=cbind(LowerCI,UpperCI)
+print(CI)
+```
+```{r}
+Broker = read.csv("https://raw.githubusercontent.com/DanikaLipman/DATA603/main/brokerstudy.csv")
+head(Broker,5)
+```
+```{r}
+CRD2=aov(price~broker, data=Broker) #Perform ANOVA for CRD
+summary(CRD2)
+```
+```{r}
+MVPC=read.csv("https://raw.githubusercontent.com/DanikaLipman/DATA603/main/MVPC.csv", header=TRUE)
+head(MVPC,5)
+```
+```{r}
+choose(4,2)
+```
+```{r}
+pairwise.t.test(MVPC$Score,MVPC$Treatment, p.adj = "none")
+pairwise.t.test(MVPC$Score,MVPC$Treatment, p.adj = "bonferroni")
+pairwise.t.test(MVPC$Score,MVPC$Treatment, p.adj = "holm")
+```
+```{r}
+LifetimeData = read.csv("https://raw.githubusercontent.com/DanikaLipman/DATA603/main/lifetime.csv")
+head(LifetimeData,5)
+```
+```{r}
+pairwise.t.test(LifetimeData$hrs,LifetimeData$device, p.adj = "none")
+pairwise.t.test(LifetimeData$hrs,LifetimeData$device, p.adj = "bonferroni")
+pairwise.t.test(LifetimeData$hrs,LifetimeData$device, p.adj = "holm")
+```
+```{r}
+MVPC=read.csv("https://raw.githubusercontent.com/DanikaLipman/DATA603/main/MVPC.csv", header=TRUE)
+head(MVPC,5)
+```
+```{r}
+CRD=aov(Score~Treatment, data=MVPC) #Perform ANOVA for CRD
+summary(CRD)
+```
+```{r}
+TukeyHSD(CRD, conf.level = 0.95)
+```
+```{r}
+plot(TukeyHSD(CRD, conf.level = 0.95),las=1, col = "red")
+```
+(Andover, Amesbury, Methuen) -- (Salem)
+```{r}
+
+CRD=aov(Score~Treatment, data=MVPC) #Perform ANOVA for CRD
+summary(CRD)
+
+library(agricolae)
+LS=LSD.test(CRD,trt="Treatment")
+LS
+```
+```{r}
+LifetimeData = read.csv("https://raw.githubusercontent.com/DanikaLipman/DATA603/main/lifetime.csv")
+head(LifetimeData,5)
+```
+```{r}
+CRD=aov(hrs~device, data=LifetimeData) #Perform ANOVA for CRD
+summary(CRD)
+```
+```{r}
+TukeyHSD(CRD, conf.level = 0.95)
+```
+```{r}
+plot(TukeyHSD(CRD, conf.level = 0.95),las=1, col = "red")
+```
+```{r}
+aggregate(LifetimeData$hrs, by = list(LifetimeData$device), FUN = mean)
+```
+```{r}
+MVPC=read.csv("https://raw.githubusercontent.com/DanikaLipman/DATA603/main/MVPC.csv", header=TRUE)
+library(agricolae)# SNK.test() is avalible in the agricolae package for Newman-Keuls (SNK)
+CRD=aov(Score~Treatment, data=MVPC) #Perform ANOVA for CRD
+summary(CRD)
+print(SNK.test(CRD,"Treatment",group=TRUE))
+```
+```{r}
+LifetimeData = read.csv("https://raw.githubusercontent.com/DanikaLipman/DATA603/main/lifetime.csv")
+library(agricolae)# SNK.test() is avalible in the agricolae package for Newman-Keuls (SNK)
+CRD=aov(hrs~device, data=LifetimeData) #Perform ANOVA for CRD
+summary(CRD)
+print(SNK.test(CRD,"device",group=TRUE))
+```
+```{r}
+
+```
+
+
+
+
