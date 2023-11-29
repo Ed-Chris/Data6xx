@@ -1875,7 +1875,7 @@ Year_Country,Country,Year,AverageTemperature,AverageTemperatureUncertainty
 1854_Asia,Asia,1854,7.209416666666666,0.9734166666666667
 1855_Asia,Asia,1855,7.278166666666667,1.0887499999999999
 1856_Asia,Asia,1856,6.828166666666667,1.09725
-1857_Asia,Asia,1857,6.469833333333334,1.1280833333333333
+1857_Asia,Asia,1857,7.058000000000001,1.126
 1858_Asia,Asia,1858,7.149416666666666,1.1228333333333333
 1859_Asia,Asia,1859,7.405833333333334,1.0305833333333334
 1860_Asia,Asia,1860,6.466833333333334,1.0674166666666667
@@ -9377,7 +9377,7 @@ Year_Country,Country,Year,AverageTemperature,AverageTemperatureUncertainty
 1784_Czech Republic,Czech Republic,1784,6.634249999999999,5.84525
 1785_Czech Republic,Czech Republic,1785,6.146916666666666,4.434083333333334
 1786_Czech Republic,Czech Republic,1786,6.34525,4.790916666666667
-1787_Czech Republic,Czech Republic,1787,7.8854999999999995,4.955
+1787_Czech Republic,Czech Republic,1787,8.602363636363636,4.946454545454546
 1788_Czech Republic,Czech Republic,1788,7.178,3.8394999999999997
 1789_Czech Republic,Czech Republic,1789,7.72325,3.425166666666667
 1790_Czech Republic,Czech Republic,1790,7.831583333333334,3.624333333333334
@@ -13490,7 +13490,7 @@ Year_Country,Country,Year,AverageTemperature,AverageTemperatureUncertainty
 1799_Germany,Germany,1799,6.313083333333334,3.0058333333333334
 1800_Germany,Germany,1800,8.106666666666667,2.9419999999999997
 1801_Germany,Germany,1801,8.810666666666666,2.4026666666666667
-1802_Germany,Germany,1802,8.26,2.783166666666667
+1802_Germany,Germany,1802,9.010909090909092,2.861
 1803_Germany,Germany,1803,7.35425,3.0145
 1804_Germany,Germany,1804,7.838583333333333,3.5020000000000002
 1805_Germany,Germany,1805,6.4745,2.6419166666666665
@@ -16266,7 +16266,7 @@ Year_Country,Country,Year,AverageTemperature,AverageTemperatureUncertainty
 1901_Iceland,Iceland,1901,1.7332500000000002,0.6243333333333333
 1902_Iceland,Iceland,1902,0.7196666666666666,0.6964166666666666
 1903_Iceland,Iceland,1903,0.6740833333333334,0.7550833333333333
-1904_Iceland,Iceland,1904,1.4333333333333336,0.56075
+1904_Iceland,Iceland,1904,1.563636363636364,0.5734545454545454
 1905_Iceland,Iceland,1905,1.3966666666666667,0.58375
 1906_Iceland,Iceland,1906,0.8055000000000002,0.693
 1907_Iceland,Iceland,1907,0.6509166666666665,0.6200833333333333
@@ -25174,7 +25174,7 @@ Year_Country,Country,Year,AverageTemperature,AverageTemperatureUncertainty
 1774_Netherlands (Europe),Netherlands (Europe),1774,8.843916666666667,6.2165
 1775_Netherlands (Europe),Netherlands (Europe),1775,9.903,3.6796666666666664
 1776_Netherlands (Europe),Netherlands (Europe),1776,8.852583333333333,4.210166666666667
-1777_Netherlands (Europe),Netherlands (Europe),1777,8.743666666666666,3.4518333333333335
+1777_Netherlands (Europe),Netherlands (Europe),1777,9.538545454545455,3.3282727272727275
 1778_Netherlands (Europe),Netherlands (Europe),1778,9.537583333333332,3.9623333333333335
 1779_Netherlands (Europe),Netherlands (Europe),1779,10.536416666666666,4.665916666666667
 1780_Netherlands (Europe),Netherlands (Europe),1780,9.208,3.5315
@@ -33448,7 +33448,7 @@ Year_Country,Country,Year,AverageTemperature,AverageTemperatureUncertainty
 1913_South Georgia And The South Sandwich Isla,South Georgia And The South Sandwich Isla,1913,0.6568333333333334,2.6765833333333333
 1914_South Georgia And The South Sandwich Isla,South Georgia And The South Sandwich Isla,1914,1.4654166666666668,1.0285
 1915_South Georgia And The South Sandwich Isla,South Georgia And The South Sandwich Isla,1915,0.9921666666666668,1.0175
-1916_South Georgia And The South Sandwich Isla,South Georgia And The South Sandwich Isla,1916,0.7854166666666668,0.836
+1916_South Georgia And The South Sandwich Isla,South Georgia And The South Sandwich Isla,1916,0.8568181818181819,0.8599999999999999
 1917_South Georgia And The South Sandwich Isla,South Georgia And The South Sandwich Isla,1917,1.6895,0.7333333333333333
 1918_South Georgia And The South Sandwich Isla,South Georgia And The South Sandwich Isla,1918,1.4678333333333333,0.9063333333333333
 1919_South Georgia And The South Sandwich Isla,South Georgia And The South Sandwich Isla,1919,1.2670833333333333,1.2155833333333332
@@ -35713,7 +35713,7 @@ Year_Country,Country,Year,AverageTemperature,AverageTemperatureUncertainty
 1952_Tajikistan,Tajikistan,1952,4.266333333333333,0.5436666666666666
 1953_Tajikistan,Tajikistan,1953,4.31175,0.44083333333333335
 1954_Tajikistan,Tajikistan,1954,3.4564999999999997,0.5381666666666667
-1955_Tajikistan,Tajikistan,1955,4.736583333333334,0.512
+1955_Tajikistan,Tajikistan,1955,5.1671818181818185,0.5075454545454545
 1956_Tajikistan,Tajikistan,1956,4.6415,0.43674999999999997
 1957_Tajikistan,Tajikistan,1957,3.044916666666667,0.6454166666666666
 1958_Tajikistan,Tajikistan,1958,4.634,0.60675
